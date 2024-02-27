@@ -182,6 +182,8 @@ h6 {
   font-weight: 600;
 }
 a {
+  color: white;
+
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
@@ -192,6 +194,7 @@ a:focus {
 }
 a:focus {
   outline: 0 solid;
+  
 }
 input:focus,
 textarea:focus {
@@ -199,6 +202,7 @@ textarea:focus {
 }
 p {
   line-height: 22px;
+  color: white;
 }
 img {
   max-width: 100%;
@@ -227,7 +231,7 @@ select {
 .titleTop .subtitle {
   font-size: 24px;
   font-weight: 600;
-  color: #888;
+  color: white;
 }
 .titleTop h3 {
   font-size: 36px;
@@ -546,6 +550,7 @@ h6 {
 }
 .topbar-wrap a {
   text-decoration: none;
+  color: white;
 }
 .topbar-wrap .toplinks {
   text-align: right;
@@ -571,28 +576,33 @@ h6 {
   margin: 5px 0 5px 0;
 }
 .navbar-default {
+  color: white;
   background: none;
   border: none;
   margin-bottom: 0;
   min-height: auto;
   float: right;
   margin-top: 5px;
+  
 }
 .navbar {
   background: none;
+  
 }
 .navbar-collapse {
   padding: 0;
 }
 .navbar-nav > li {
   padding: 0 5px;
+
 }
 .navbar-nav > li > a {
   font-weight: 600;
+  color: white !important;
   padding: 10px 15px;
   border-radius: 5px;
 }
-.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   background: none;
@@ -617,7 +627,7 @@ h6 {
 }
 .dropdown-menu > li > a {
   font-weight: 600;
-  color: #555;
+  color: #fff;
   padding: 7px 15px;
   border-bottom: 1px solid #eee;
 }
@@ -650,11 +660,11 @@ h6 {
 .searchwrap {
   background: url(../images/search-bg.jpg) no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 80px 0 50px;
 }
 .searchwrap h3 {
   text-align: center;
-  font-size: 48px;
+  font-size: 50px;
   color: #fff;
 }
 .searchwrap p {
@@ -1078,13 +1088,13 @@ a.wit-btn {
            == About css==
 *************************************************/
 .about-wrap {
-  background: #5dc302;
+  background: black;
+  height: 25rem;
 }
 .about-wrap .col-md-6 {
   padding: 0;
 }
 .about-wrap .about-image {
-  background: url(../../images/about-img.jpg) no-repeat left;
   background-size: cover;
   height: 580px;
 }
@@ -1118,20 +1128,20 @@ a.wit-btn {
 }
 .about-wrap ul li {
   margin-top: 15px;
-  color: #fff;
+  color: black;
   font-weight: 600;
   position: relative;
-  padding-left: 25px;
 }
-.about-wrap ul li:before {
+/* .about-wrap ul li:before {
   content: "\f00c";
   font-family: "FontAwesome";
   position: absolute;
   left: 0;
-}
+} */
 .about-wrap .aboutinfo {
-  max-width: 560px;
+  max-width: 1200px;
   padding: 70px 20px 30px 50px;
+  
 }
 /************************************************
            == How it works css==
@@ -1140,7 +1150,7 @@ a.wit-btn {
   list-style: none;
 }
 .howlist li {
-  margin: 30px 0;
+  /* margin: 30px 0; */
   text-align: center;
 }
 .howlist li .iconcircle {
@@ -1163,6 +1173,7 @@ a.wit-btn {
   line-height: 24px;
   color: #555;
 }
+
 /************************************************
            == Categories css==
 *************************************************/
@@ -1205,24 +1216,7 @@ a.wit-btn {
 /*Top Search*/
 /* .topsearchwrap {
 } */
-.topsearchwrap h4 {
-  background: #5dc302;
-  margin-bottom: 15px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  padding: 12px 20px;
-  text-transform: uppercase;
-}
-.topsearchwrap h5 {
-  background: #333;
-  margin-bottom: 15px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  padding: 12px 20px;
-  text-transform: uppercase;
-}
+
 .catelist li a {
   display: block;
   margin: 10px 0;
@@ -4042,6 +4036,70 @@ blockquote:after {
 .papu-post li:last-child {
   border-bottom: 0;
 }
+.image-container {
+  position: relative;    
+  width: 100%;
+  display: inline-block; /* Ensures the container takes up only the space needed by the image */
+}
+
+
+
+
+.text-overlay {
+  position: absolute;
+  font-size: 45px;
+  font-weight:600;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+.break-span {
+  display: block; /* Display as block-level element */
+  word-break: break-all; /* Allow line break at any point */
+}
+.my-button {
+	position: absolute;
+  font-size: 20px;
+  top: 40%;
+  left: 4%;
+	background-color: #5dc302 ;
+	border: 2px;
+	color: white;
+  font-weight: 600;
+	padding: 10px 50px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+/* Hover effect */
+
+.transition-300ms {
+  transition: 300ms ease;
+}
+.topsearchwrap h4 {
+  background: #5dc302;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+.topsearchwrap h5 {
+  background: #333;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
 /*Tags*/
 .tags:after {
   display: table;
@@ -4302,6 +4360,7 @@ blockquote:after {
     margin-left: 0px;
     font-size: 44px;
   }
+  
   .main-plan .plan-price2-1 {
     font-size: 70px;
   }

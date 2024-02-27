@@ -182,22 +182,11 @@ console.log(user == 'USER')
                     <li>
                       <Link to="/carlist">Buy Cars</Link>
                     </li>
-                    {/* <li>
-                      <a href="listing.html">New Cars</a>
-                    </li> */}
+                    
                     <li>
                       <Link to="/Contact">Contact Us</Link>
                     </li>
 
-                    {/* <li className="" style={{ backgroundColor: "white" }}>
-                      {user ? (
-
-                        <AvtarModal />
-
-                      ) : (
-                        <Link to={"/signup"}>Sign Up</Link>
-                      )}
-                    </li> */}
                        <li>
                         {
                           !user ? <Link to={"/signup"}>Sign Up</Link> :""

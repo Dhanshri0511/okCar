@@ -37,7 +37,7 @@ const Logo = (props) => {
 const MainFooter = () => (
   <>
     <Box
-      bg="#152F4F"
+      bg="black"
       color="white"
  
       // color={useColorModeValue('gray.700', 'gray.200')}
